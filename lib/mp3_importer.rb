@@ -7,10 +7,10 @@ class MP3Importer
   end
   
   def files
-      Dir[@path+"/*.mp3"].map { |file| file.split("/").last }
-    end
+    Dir[@path+"/*.mp3"].map { |file| file.split("/").last }
+  end
   
-    def import
-      files.each { |file| Song.new_by_filename(file) }
-    end
+  def import
+    files.each { |file| Song.new_by_filename(file) }
+  end
 end
