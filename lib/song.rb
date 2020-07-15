@@ -9,7 +9,7 @@ class Song
     @@all << self
   end
   
-  def self.all 
+def self.all 
     @@all
   end
   
@@ -19,5 +19,5 @@ class Song
     song.artist_name = song_file[0]
     song
     end
-  
+  end
 end
