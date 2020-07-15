@@ -18,6 +18,8 @@ def self.all
     song = Song.new(song_file[1])
     song.artist_name = song_file[0]
     song
-    end
   end
+  
+  def artist=(name)
+    
 end
